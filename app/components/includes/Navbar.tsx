@@ -1,26 +1,31 @@
 import Link from "next/link";
 
+const navItems = [
+  { label: "Home", href: "#" },
+  { label: "About", href: "#" },
+  { label: "Works", href: "#" },
+  { label: "Contact Me", href: "#" },
+];
+
 export default function Navbar() {
   return (
     <section className="pt-10 w-full flex items-center justify-center">
       <nav className="w-full flex items-center justify-center">
         <ul
-          className="w-2/5 flex items-center justify-between px-8 py-3 
+          className="navbar-shadow w-2/5 flex items-center justify-between px-8 py-3 
                    bg-white/10 backdrop-blur-md shadow-lg 
                    border border-white/30 rounded-full"
         >
-          <li>
-            <Link href="#">Home</Link>
-          </li>
-          <li>
-            <Link href="#">About</Link>
-          </li>
-          <li>
-            <Link href="#">Works</Link>
-          </li>
-          <li>
-            <Link href="#">Contact Me</Link>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link
+                href={item.href}
+                className="text-neutral-800 hover:text-neutral-950"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </section>
