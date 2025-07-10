@@ -78,14 +78,14 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full flex items-start h-screen">
+    <section className="w-full flex items-start h-screen z-100">
       <div className="left w-1/2 h-full relative">
         <Image
           src={"/assets/me.png"}
           alt="me"
           width={600}
           height={600}
-          className="rotate-25 shadow-lg"
+          className="rotate-25 "
         />
 
         <div

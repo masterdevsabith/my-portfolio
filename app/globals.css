@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --circle-one: #e01717;
+  --circle-two: #ab1111;
 }
 
 @theme inline {
@@ -23,4 +25,27 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.red_circle {
+  box-shadow: 0px 4px 84px -2px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 0px 4px 84px -2px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 0px 4px 84px -2px rgba(0, 0, 0, 0.75) inset;
+}
+
+/*ENDLESS HORIZONTAL SCROLLING ANIMATION*/
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll-horizontal 30s linear infinite;
 }

@@ -2,6 +2,8 @@ import { Poppins } from "next/font/google";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/includes/Navbar";
+import About from "./components/About";
+import ContentCreation from "./components/ContentCreation";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +17,8 @@ export default function Home() {
     <main className={`bg-[var(--background)] ${poppins.className}`}>
       <Navbar />
       <Hero />
+      <About />
+      <ContentCreation />
     </main>
   );
 }
