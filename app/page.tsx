@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className={`bg-[var(--background)] ${poppins.className}`}>
+    <main className={`relative bg-[var(--background)] ${poppins.className}`}>
       <Navbar />
       <Hero />
       <About />

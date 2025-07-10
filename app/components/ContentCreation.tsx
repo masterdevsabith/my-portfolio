@@ -50,7 +50,7 @@ export default function ContentCreation() {
   ];
 
   return (
-    <section className="w-full relative px-14 py-16 bg-neutral-50 overflow-x-hidden">
+    <section className="w-full px-14 py-16 bg-neutral-50 overflow-x-hidden">
       <div className="top mb-10">
         <div className="left">
           <h3 className="text-6xl font-black">I'm a</h3>
@@ -58,7 +58,7 @@ export default function ContentCreation() {
         </div>
         <div className="right">
           <div
-            className="insta_handle absolute top-10 left-260 -rotate-10 w-100 h-56 p-4 rounded-2xl bg-black/80 backdrop-blur-sm 
+            className="z-2000 insta_handle absolute top-414 left-260 -rotate-10 w-100 h-56 p-4 rounded-2xl bg-black/80 backdrop-blur-sm 
                 border-r border-white/10 
                 shadow-inner flex items-start justify-between"
           >
