@@ -8,6 +8,7 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/includes/Footer";
 import FadeIn from "./components/ui/fadein-wrapper";
+import ScrollerContext from "./components/includes/ScrollerContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,20 +19,22 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className={`relative bg-[var(--background)] ${poppins.className}`}>
-      <Navbar />
+    <ScrollerContext>
+      <main className={`relative bg-[var(--background)] ${poppins.className}`}>
+        <Navbar />
 
-      <Hero />
+        <Hero />
 
-      <About />
+        <About />
 
-      <ContentCreation />
+        <ContentCreation />
 
-      <Works />
+        <Works />
 
-      <Contact />
+        <Contact />
 
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </ScrollerContext>
   );
 }
