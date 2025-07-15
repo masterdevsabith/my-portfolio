@@ -53,3 +53,16 @@ body {
   width: max-content;
   animation: scroll-horizontal 30s linear infinite;
 }
+.special_input {
+  outline: none;
+  width: 220px;
+  border-bottom: 2px solid #424040;
+  margin-bottom: 8px;
+  margin-left: 3px;
+}
+.work_input {
+  width: 270px;
+}
+.email_input {
+  width: 300px;
+}

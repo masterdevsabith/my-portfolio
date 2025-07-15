@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Contact() {
@@ -10,49 +11,42 @@ export default function Contact() {
         </div>
       </div>
       <div className="bottom flex items-start">
-        <div className="left w-1/2">
-          <form action="">
+        <div className="left w-2/3">
+          <form className="form_filler text-2xl">
+            Hi! My name is{" "}
             <input
               type="text"
-              name=""
-              id=""
-              required
-              placeholder="your name..."
-              className="mb-2 bg-white border-1 border-neutral-500 px-4 py-2 w-full"
+              name="name"
+              placeholder="enter your name"
+              className="special_input italic"
             />
+            , and I have a{" "}
+            <input
+              type="text"
+              name="project"
+              placeholder="your project/job"
+              className="special_input work_input italic"
+            />{" "}
+            that needs your help.
+            <br /> You can reach me at
             <input
               type="email"
-              name=""
-              id=""
-              required
-              placeholder="your email..."
-              className="mb-2 bg-white border-1 border-neutral-500 px-4 py-2 w-full"
-            />
-            <textarea
-              name=""
-              id=""
-              required
-              cols={40}
-              rows={10}
-              placeholder="your message..."
-              className="bg-white border-1 border-neutral-500 px-4 py-2 w-full"
-            ></textarea>
-            <input
-              type="submit"
-              value="Let's Connect"
-              className="bg-blue-600 text-white font-bold border-1 border-neutral-500 px-4 py-2 w-full"
-            />
+              name="email"
+              placeholder="enter your email"
+              className="special_input email_input italic"
+            />{" "}
+            to get things started.
+            <div className="mt-6">
+              <button
+                type="submit"
+                className="flex items-center gap-3 px-4 py-2 rounded-2xl bg-stone-300 hover:bg-black text-black mt-4 hover:text-white transition-all duration-200"
+              >
+                Send info <ArrowRight />
+              </button>
+            </div>
           </form>
         </div>
-        <div className="right w-1/2">
-          <Image
-            src={"/assets/me2.png"}
-            alt=""
-            width={600}
-            height={600}
-            className="absolute top-40 right-20"
-          />
-        </div>
+        <div className="right w-1/2"></div>
       </div>
     </section>
   );

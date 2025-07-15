@@ -9,7 +9,7 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <section className="pt-10 w-full flex items-center justify-center">
+    <section className=" pt-10 w-full flex items-center justify-center">
       <nav className="w-full flex items-center justify-center">
         <ul
           className="navbar-shadow w-2/5 flex items-center justify-between px-8 py-3 
