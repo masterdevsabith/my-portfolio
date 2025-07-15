@@ -66,3 +66,9 @@ body {
 .email_input {
   width: 300px;
 }
+
+/*SMOOTH SCROLLING*/
+
+html {
+  /* scroll-behavior: smooth; */
+}

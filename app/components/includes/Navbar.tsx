@@ -4,7 +4,7 @@ const navItems = [
   { label: "Home", href: "#" },
   { label: "About", href: "#" },
   { label: "Works", href: "#" },
-  { label: "Contact Me", href: "#" },
+  { label: "Contact Me", href: "#contact_section" },
 ];
 
 export default function Navbar() {
