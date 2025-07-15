@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/includes/Footer";
 import FadeIn from "./components/ui/fadein-wrapper";
 import ScrollerContext from "./components/includes/ScrollerContext";
+import Skills from "./components/Skills";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,8 @@ export default function Home() {
         <About />
 
         <ContentCreation />
+
+        <Skills />
 
         <Works />
 
