@@ -26,9 +26,9 @@ export default function Home() {
 
         <Hero />
 
-        {/* <About />
+        <About />
 
-        <ContentCreation />
+        {/* <ContentCreation />
 
         <Skills />
 
