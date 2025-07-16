@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 const navItems = [
@@ -12,7 +13,7 @@ export default function Navbar() {
     <section className=" pt-10 w-full flex items-center justify-center">
       <nav className="w-full flex items-center justify-center">
         <ul
-          className="navbar-shadow w-2/5 flex items-center justify-between px-8 py-3 
+          className="navbar-shadow sm:hidden md:flex md:w-3/5 xl:w-2/5 flex items-center justify-between px-8 py-3 
                    bg-white/10 backdrop-blur-md shadow-lg 
                    border border-white/30 rounded-full"
         >
@@ -27,6 +28,10 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <div className="md:hidden hamburger_icon">
+          <Menu className="p-2 bg-stone-200 rounded-full" size={40} />
+        </div>
       </nav>
     </section>
   );
