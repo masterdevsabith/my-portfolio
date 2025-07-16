@@ -89,7 +89,7 @@ export default function Hero() {
         />
 
         <div
-          className="folder_icon flex flex-col items-center absolute top-70 left-140 z-50"
+          className="sm:w-1/2 md:w-1/2 folder_icon flex flex-col items-center absolute top-90 left-200 sm:top-80 sm:left-100 md:top-80 md:left-120 lg:top-90 lg:left-158 rotate-6 z-50"
           onClick={() => setOpen(!open)}
         >
           <Image
@@ -97,7 +97,7 @@ export default function Hero() {
             alt=""
             width={80}
             height={80}
-            className="hover:scale-105 transition-all duration-300"
+            className=" hover:scale-105 transition-all duration-300"
           />
           <span>Don't Click Me</span>
         </div>
@@ -105,13 +105,13 @@ export default function Hero() {
 
       <div className="right w-1/2 h-full pr-14 py-16 flex flex-col items-start justify-start">
         <div className="headings flex flex-col">
-          <h1 className="text-8xl">Hey There,</h1>
-          <h1 className="text-9xl">
+          <h1 className="lg:text-7xl text-5xl">Hey There,</h1>
+          <h1 className="lg:text-8xl text-6xl lg:flex sm:flex">
             I'm <b className="italic">Sabith</b>
           </h1>
         </div>
-        <div className="content mb-12">
-          <p className="text-lg">
+        <div className="content mb-12 sm:mb-8">
+          <p className="text-lg sm:text-sm">
             I'm a <u>programmer</u>, <u>content creator</u>, and a man who loves
             to learn...
           </p>

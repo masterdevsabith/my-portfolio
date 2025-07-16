@@ -26,7 +26,7 @@ export default function Home() {
 
         <Hero />
 
-        <About />
+        {/* <About />
 
         <ContentCreation />
 
@@ -36,7 +36,7 @@ export default function Home() {
 
         <Contact />
 
-        <Footer />
+        <Footer /> */}
       </main>
     </ScrollerContext>
   );
