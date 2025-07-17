@@ -28,15 +28,15 @@ export default function Home() {
 
         <About />
 
-        {/* <ContentCreation />
+        {/* <ContentCreation /> */}
 
-        <Skills />
+        {/* <Skills /> */}
 
-        <Works />
+        {/* <Works /> */}
 
-        <Contact />
+        {/* <Contact /> */}
 
-        <Footer /> */}
+        {/* <Footer /> */}
       </main>
     </ScrollerContext>
   );

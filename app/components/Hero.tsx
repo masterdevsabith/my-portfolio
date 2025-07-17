@@ -137,7 +137,7 @@ export default function Hero() {
 
       {/* apple folder interface ui */}
       {open && (
-        <div className="apple_interface h-126 flex items-start absolute top-50 left-50 w-2/4  rounded-2xl z-60">
+        <div className="apple_interface h-126 flex items-start absolute top-50 left-50 w-2/4  rounded-2xl z-60 transition-all duration-300">
           <div
             className="left w-1/4 h-full
                 bg-white/80 backdrop-blur-sm 

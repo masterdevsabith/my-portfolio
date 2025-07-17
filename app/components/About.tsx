@@ -29,12 +29,12 @@ export default function About() {
   ];
 
   return (
-    <section className="w-full px-14 py-16 pb-0 bg-neutral-100 relative z-200 flex items-start justify-between">
-      <div className="left w-1/2">
+    <section className="w-full px-14 py-16 pb-0 bg-neutral-100 relative z-200 flex sm:flex-col xl:flex-row items-start justify-between">
+      <div className="left sm:w-full xl:w-1/2 sm:mb-8 xl:mb-0">
         <h3 className="text-6xl font-black">Me.</h3>
         <h1 className="text-9xl font-semibold">About</h1>
 
-        <div className="my_image relative">
+        <div className="my_image relative sm:hidden xl:block">
           <div className="red_circle z-10 w-140 h-140 bg-[var(--circle-one)] rounded-full absolute top-0 left-0"></div>
           <Image
             src={"/assets/me2.png"}
@@ -45,9 +45,9 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="right  w-1/2">
+      <div className="right  sm:w-full xl:w-1/2">
         {aboutme.map((paragraph, idx) => (
-          <p key={idx} className="mb-6 ">
+          <p key={idx} className="mb-6 xl:text-md ">
             {paragraph.paragraph}
           </p>
         ))}
