@@ -2,11 +2,13 @@ import Cards from "./includes/Cards";
 
 export default function Works() {
   return (
-    <section className="px-14 py-16">
+    <section className="sm:px-10 md:px-14 py-16">
       <div className="top mb-10">
         <div className="left">
           <h3 className="text-6xl font-black">My</h3>
-          <h1 className="text-9xl font-semibold">Works & Projects</h1>
+          <h1 className="lg:text-9xl sm:text-7xl font-semibold ">
+            Works & Projects
+          </h1>
         </div>
       </div>
       <div className="right"></div>
