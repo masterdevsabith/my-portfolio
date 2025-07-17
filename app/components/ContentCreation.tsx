@@ -53,12 +53,14 @@ export default function ContentCreation() {
     <section className="w-full px-14 py-16 bg-neutral-50 overflow-x-hidden">
       <div className="top mb-10">
         <div className="left">
-          <h3 className="text-6xl font-black">I'm a</h3>
-          <h1 className="text-9xl font-semibold">Content Creator</h1>
+          <h3 className="md:text-6xl sm:text-3xl font-black">I'm a</h3>
+          <h1 className="md:text-9xl sm:text-6xl font-semibold">
+            Content Creator
+          </h1>
         </div>
         <div className="right">
           <div
-            className="z-2000 insta_handle absolute top-414 left-260 -rotate-10 w-100 h-56 p-4 rounded-2xl bg-black/80 backdrop-blur-sm 
+            className="z-2000 insta_handle absolute sm:top-480 md:top-460 lg:top-444 xl:top-414 sm:left-50 md:left-80 lg:left-140 xl:left-260 -rotate-10 w-100 sm:h-44 md:h-56 p-4 rounded-2xl bg-black/80 backdrop-blur-sm 
                 border-r border-white/10 
                 shadow-inner flex items-start justify-between"
           >
@@ -75,7 +77,7 @@ export default function ContentCreation() {
               <h3 className="mb-3 text-md font-bold text-white flex items-start gap-1">
                 sabiiii.fx <BadgeCheck size={14} />
               </h3>
-              <div className="stats mb-2 flex items-center gap-2">
+              <div className="stats sm:mb-4 md:mb-2 flex items-center gap-2">
                 <h4 className="text-neutral-300 text-sm">
                   <b className="text-white">6</b> posts
                 </h4>
@@ -86,7 +88,7 @@ export default function ContentCreation() {
                   <b className="text-white">224</b> following
                 </h4>
               </div>
-              <p className="text-xs text-white mb-5">
+              <p className="text-xs text-white mb-5 sm:hidden md:visible">
                 Documenting the journey to financial freedom as a +2 Student |
                 Sharing golden takeaways ...
               </p>
