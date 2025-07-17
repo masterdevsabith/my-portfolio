@@ -78,14 +78,21 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full flex items-start h-screen z-100">
+    <section className="w-full pt-80 px-12 md:pt-0 flex sm:flex-col-reverse md:flex-row sm:items-start md:items-start h-screen z-100">
       <div className="left w-1/2 h-full relative">
         <Image
           src={"/assets/me.png"}
           alt="me"
           width={600}
           height={600}
-          className="rotate-25 "
+          className="sm:hidden md:inline-block sm:rotate-0 md:rotate-25 relative sm:left-80 md:left-0 md:top-40 lg:static"
+        />
+        <Image
+          src={"/assets/me.png"}
+          alt="me"
+          width={1000}
+          height={1000}
+          className="sm:visible md:hidden sm:rotate-0 md:rotate-25 relative sm:left-80  md:top-40 lg:static"
         />
 
         <div
@@ -105,13 +112,13 @@ export default function Hero() {
 
       <div className="right w-1/2 h-full pr-14 py-16 flex flex-col items-start justify-start">
         <div className="headings flex flex-col">
-          <h1 className="lg:text-7xl text-5xl">Hey There,</h1>
-          <h1 className="lg:text-8xl text-6xl lg:flex sm:flex">
+          <h1 className="lg:text-7xl md:text-5xl sm:text-7xl">Hey There,</h1>
+          <h1 className="lg:text-8xl md:text-6xl sm:text-8xl lg:flex sm:flex">
             I'm <b className="italic">Sabith</b>
           </h1>
         </div>
         <div className="content mb-12 sm:mb-8">
-          <p className="text-lg sm:text-sm">
+          <p className="text-lg sm:text-sm sm:w-full">
             I'm a <u>programmer</u>, <u>content creator</u>, and a man who loves
             to learn...
           </p>
