@@ -88,7 +88,7 @@ export default function ContentCreation() {
                   <b className="text-white">224</b> following
                 </h4>
               </div>
-              <p className="text-xs text-white mb-5 sm:hidden md:visible">
+              <p className="text-xs text-white mb-5 sm:hidden md:block">
                 Documenting the journey to financial freedom as a +2 Student |
                 Sharing golden takeaways ...
               </p>
